@@ -23,6 +23,26 @@
      --hero-background-color:#2F303A;
      --adres-color:rgba(255, 255, 255, 0.6);
      --logo-studio-link-color:#000000;
+     --border-color:#ECECEC;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
 }
 .lst{
     list-style: none;
@@ -30,6 +50,8 @@
 .link{
     text-decoration: none;
 }
+
+
 body{
     font-family: var(--main-font);
     color:var(--primary-text-color)
@@ -52,6 +74,21 @@ body{
 
 .page-header{
     background-color: var(--primary-navigation-color);
+    border: 1px solid var(--border-color);
+}
+.conteiner{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-conteiner{
+    display: flex;
+}
+.navigation{
+    display: flex;
+    align-items: center;
 }
 .logo-text{
 font-family: var(--secondery-font);
@@ -62,17 +99,22 @@ letter-spacing: 0.03em;
 }
 .logo-link{
     color: var(--akcent-color);
+    margin-right: 93px;
 }
 .logo-studio-link{
     color: var(--logo-studio-link-color); 
 }
-
+.site-nav-list{
+    display: flex;
+}
+.site-nav-item:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav-list .nav-link{
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
-
 color: var(--primary-text-color);
 }
 .site-nav-list .nav-link.current{
@@ -84,6 +126,13 @@ color: var(--primary-text-color);
     color: var(--akcent-color);
 }
 /*Контакты*/
+.contacts-list{
+    display: flex;
+    margin-left: auto;
+}
+.contacts-link{
+    margin-right: 50px;
+}
 .contacts-list a{
 font-weight: 500;
 font-size: 14px;
