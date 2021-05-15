@@ -247,17 +247,26 @@ color: var(--primary-text-color);
 }
 .team-list{
     display: flex;
+    text-align: center;
 }
+.title{
+    margin-top: 30px;
+}
+.team-list-item{
+width: 270px;
+height: 368px;
+}
+
 .team-list-item:not(:last-child){
     margin-right: 30px;
     padding-bottom: 94px;
+    
 }
 .team-list .title{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-
 color: var(--primary-text-color);
 }
 .team-list .description{
@@ -318,6 +327,15 @@ color: var(--adres-color);
     color:var(--akcent-color);
 }
 /*=============Portfolio=================*/
+.section-portfolio{
+    background-color: var(--section-color);
+}
+.portfolio-container{
+    padding-top: 94px;
+}
+.menu-list{
+    display: flex;
+}
 .menu-list .menu-button{
 font-family: inherit;
 font-weight: 500;
@@ -325,7 +343,6 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
-
 color: var(--primary-text-color);
 background-color: var(--background-color-section);
 }
