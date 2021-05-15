@@ -14,47 +14,49 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!--Секция главной навигации-->
-    <header class="page-header">
-        <div class="conteiner header-conteiner">
-        <nav class="navigation">
-            <ul class="logo-text lst">
-                <li class="logo-text-item">
-                    <a class="logo-link link" href="./index.html">Web<span class="logo-studio-link">Studio</span> </a>
-                </li>
-            </ul>
-    
-            <ul class="site-nav-list lst">
-                <li class="site-nav-item">
-                    <a class="nav-link current link" href="./index.html">Студия</a>
-                </li>
-                <li class="site-nav-item">
-                    <a class="nav-link link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="site-nav-item">
-                    <a class="nav-link link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Контакты-->
-        <ul class="contacts-list lst">
-            <li class="contacts-item link">
-                <a class="contacts-link link" href="mailto:nfo@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contacts-item">
-                <a class="contacts-link link" href="tel:+380961111111">+38 (096) 111-11-11</a>
+ <!--Секция главной навигации-->
+<header class="page-header">
+    <div class="container header-container">
+    <nav class="navigation">
+        <ul class="logo-text lst">
+            <li class="logo-text-item">
+                <a class="logo-link link" href="./index.html">Web<span class="logo-studio-link">Studio</span> </a>
             </li>
         </ul>
-        </div>
-    </header>
+        <ul class="site-nav-list lst">
+            <li class="site-nav-item">
+                <a class="nav-link current link" href="./index.html">Студия</a>
+            </li>
+            <li class="site-nav-item">
+                <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="site-nav-item">
+                <a class="nav-link link" href="">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Контакты-->
+    <ul class="contacts-list lst">
+        <li class="contacts-item link">
+            <a class="contacts-link link" href="mailto:nfo@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contacts-item">
+            <a class="contacts-link link" href="tel:+380961111111">+38 (096) 111-11-11</a>
+        </li>
+    </ul>
+    </div>
+</header>
 <!--Секция заказа услуги-->
    <main class="main-content">
        <section class="hero">
+           <div class="container hero-container">
            <h1 class="hero-title">Эффективные решения<br /> для вашего бизнеса</h1>
         <button class="hero-button" type="button" >Заказать услугу</button>
+        </div>
        </section>
 <!--Секция навыков-->
    <section class="section">
+       <div class="container skills-container">
        <h2 class="visually-hidden">Секция навыков</h2>
        <ul class="section-list lst">
            <li class="section-item">
@@ -74,9 +76,11 @@
                <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
            </li>
        </ul>
+    </div>
    </section>
 <!--Секция услуг-->
 <section class="section">
+    <div class="container services-container">
             <h2  class="section-title">Чем мы занимаемся</h2>
             <ul class="services-list lst">
         <li class="services-list-item">
@@ -89,9 +93,11 @@
             <img src="./images/webstudio/box3.jpg" alt="человек рисует на планшете" width="370" height="294"/>
         </li>
     </ul>
+    </div>
 </section>
 <!--Секция команда-->
 <section class="section-team">
+    <div class="container team-container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="team-list lst">
         <li class="team-list-item">
@@ -115,10 +121,12 @@
             <p class="description" lang="en" >UI Designer</p>
         </li>
     </ul>
+    </div>
 </section>
 </main>
 <!--Футер-->
 <footer class="footer">
+    <div class="container footer-container">
     <ul class="logo-text-futer lst">
         <li class=logo-text-futer-item>
             <a class="logo-link-fut link" href="./index.html">Web<span class="logo-studio-link-fut">Studio</span> </a>
@@ -136,6 +144,7 @@
                 <a class="adres-link link" href="tel:+380961111111">+38 (096) 111-11-11</a>
             </li>
         </ul>
+        </div>
     </address>
 </footer>
 </body>

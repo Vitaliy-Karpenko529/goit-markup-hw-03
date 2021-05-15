@@ -76,14 +76,17 @@ body{
     background-color: var(--primary-navigation-color);
     border: 1px solid var(--border-color);
 }
-.conteiner{
+.container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
-.header-conteiner{
+.description{
+    margin-top: 10px;
+}
+.header-container{
     display: flex;
 }
 .navigation{
@@ -96,6 +99,8 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+padding-top: 24px;
+padding-bottom: 25px;
 }
 .logo-link{
     color: var(--akcent-color);
@@ -106,6 +111,8 @@ letter-spacing: 0.03em;
 }
 .site-nav-list{
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .site-nav-item:not(:last-child){
     margin-right: 50px;
@@ -129,6 +136,8 @@ color: var(--primary-text-color);
 .contacts-list{
     display: flex;
     margin-left: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contacts-link{
     margin-right: 50px;
@@ -147,6 +156,11 @@ color:var(--primary-description-color);
 }
 
 /*Секция заказа услуги*/
+.hero-container{
+   padding-top: 200px;
+   padding-bottom: 280px;
+   text-align: center;
+}
 .hero{
     background-color: var(--hero-background-color);
 }
@@ -156,6 +170,7 @@ font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+padding-bottom: 30px;
 
 color: var(--primary-navigation-color);
 }
@@ -164,15 +179,27 @@ font-family: inherit;
 font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
-display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
+border: 1px solid #2196F3;
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+padding: 10px 32px;
 
 color: var(--primary-navigation-color);
 background-color: var(--akcent-color);
 }
 /*Секция навыков*/
+.skills-container{
+    padding-top: 94px;
+}
+.section-list{
+    display: flex;
+}
+.section-item:not(:last-child){
+    margin-right: 30px;
+}
 .section-list .title{
 font-weight: 700;
 font-size: 14px;
@@ -191,18 +218,39 @@ letter-spacing: 0.03em;
 color: var(--primary-description-color);
 }
 /*Секция услуг*/
+.services-container{
+    padding-top: 94px;
+}
+.services-list{
+    display: flex;
+}
+.services-list-item:not(:last-child){
+    margin-right: 30px;
+    padding-bottom: 94px;
+}
 .section-title{
 font-weight: 700;
 font-size: 36px;
 line-height: 1.16;
 letter-spacing: 0.03em;
-
+margin-bottom: 50px;
+text-align: center;
 color: var(--primary-text-color);
 
 }
 /*Секция команда*/
+.team-container{
+    padding-top: 94px;
+}
 .section-team{
-    background-color: var(--background-color-team);
+    background-color: var(--background-color-section);
+}
+.team-list{
+    display: flex;
+}
+.team-list-item:not(:last-child){
+    margin-right: 30px;
+    padding-bottom: 94px;
 }
 .team-list .title{
 font-weight: 500;
@@ -221,6 +269,10 @@ letter-spacing: 0.03em;
 color: var(--primary-description-color);
 }
 /*Футер*/
+.footer-container{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
 .footer{
     background-color: #2F303A;
 }
@@ -230,6 +282,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
+margin-bottom: 20px;
 }
 .logo-link-fut{
     color: var(--akcent-color);
@@ -243,8 +296,10 @@ font-size: 14px;
 line-height: 1.71;
 font-style: normal;
 letter-spacing: 0.03em;
-
 color: var(--primary-navigation-color);
+}
+.adres-list-item{
+    margin-bottom: 9px;
 }
 .link-adres:hover,
 .link-adres:focus{
