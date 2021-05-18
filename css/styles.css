@@ -74,7 +74,7 @@ body{
 
 .page-header{
     background-color: var(--primary-navigation-color);
-    border: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 .container{
     width: 1200px;
@@ -90,16 +90,14 @@ body{
     display: flex;
     align-items: center;
 }
-.logo-text{
-font-family: var(--secondery-font);
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-padding-top: 24px;
-padding-bottom: 25px;
-}
 .logo-link{
+    font-family: var(--secondery-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
     color: var(--akcent-color);
     margin-right: 93px;
 }
@@ -108,18 +106,20 @@ padding-bottom: 25px;
 }
 .site-nav-list{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
 }
 .site-nav-item:not(:last-child){
     margin-right: 50px;
 }
-.site-nav-list .nav-link{
+.nav-link{
+    display: block;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
+padding-top: 32px;
+padding-bottom: 32px;
 }
 .site-nav-list .nav-link.current{
      color: var(--akcent-color);
@@ -154,12 +154,12 @@ color:var(--primary-description-color);
 
 /*Секция заказа услуги*/
 .hero-container{
-   padding-top: 200px;
-   padding-bottom: 280px;
    text-align: center;
 }
 .hero{
     background-color: var(--hero-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title{
 font-weight: 900;
@@ -167,7 +167,7 @@ font-size: 44px;
 line-height: 1.36;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-padding-bottom: 30px;
+margin-bottom: 30px;
 
 color: var(--primary-navigation-color);
 }
@@ -188,12 +188,9 @@ color: var(--primary-navigation-color);
 background-color: var(--akcent-color);
 }
 /*Секция навыков*/
-.skills-container{
+.section{
     padding-top: 94px;
-}
-.description{
-    margin-top: 10px;
-    width: 270px;
+    padding-bottom: 94px;
 }
 .section-list{
     display: flex;
@@ -201,13 +198,18 @@ background-color: var(--akcent-color);
 .section-item:not(:last-child){
     margin-right: 30px;
 }
+.section-item{
+width: 270px;
+
+}
 .section-list .title{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
+margin-top: 0%;
+margin-bottom: 10px;
 color: var(--primary-text-color);
 }
 .section-list .description{
@@ -215,19 +217,17 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-
 color: var(--primary-description-color);
 }
 /*Секция услуг*/
-.services-container{
-    padding-top: 94px;
+.section-services{
+    padding-bottom: 90px;
 }
 .services-list{
     display: flex;
 }
 .services-list-item:not(:last-child){
     margin-right: 30px;
-    padding-bottom: 94px;
 }
 .section-title{
 font-weight: 700;
@@ -240,10 +240,9 @@ color: var(--primary-text-color);
 
 }
 /*Секция команда*/
-.team-container{
-    padding-top: 94px;
-}
 .section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: var(--background-color-section);
 }
 .team-list{
@@ -252,18 +251,15 @@ color: var(--primary-text-color);
     margin-left: -30px;
     margin-top: -30px;
 }
-.title{
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.description-team{
+.text-container{
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 .team-list-item{
+    width: 270px;
 margin-left: 30px;
 margin-top: 30px;
 background-color: var(--primary-navigation-color);
-margin-bottom: 94px;
 border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 flex-wrap: wrap;
@@ -276,13 +272,13 @@ font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
+margin-bottom: 10px;
 }
 .team-list .description-team{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.18;
 letter-spacing: 0.03em;
-
 color: var(--primary-description-color);
 }
 /*Футер*/
@@ -338,17 +334,16 @@ color: var(--adres-color);
            /* кнопки*/
 .section-portfolio{
     background-color: var(--section-color);
-}
-.portfolio-container{
-    padding-top: 94px;
+    padding-top: 108px;
+    padding-bottom: 80px;
 }
 .menu-list{
     display: flex;
-    padding-bottom: 50px;
-    margin-left: 280px;
+    margin-bottom: 50px;
+    margin-left: 281px;
 }
-.menu-list-item{
-    margin-left: 8px;
+.menu-list-item:not(:last-child){
+        margin-right: 8px;
 }
 .everything{
 padding:6px 22px 6px 22px;
@@ -413,8 +408,7 @@ background-color: var(--background-color-section);
 .card-container{
 background-color: var(--primary-navigation-color);
 box-sizing: border-box;
-border: 1px solid #EEEEEE;
-border-top: none;
+border-bottom: 1px solid #EEEEEE;
 }
 .img-link{
     text-decoration: none;
