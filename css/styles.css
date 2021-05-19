@@ -17,7 +17,6 @@
     --primary-text-color:#212121;
     --primary-description-color:#757575;
      --akcent-color:#2196F3;
-    --section-color:#E5E5E5;
     --primary-navigation-color:#FFFFFF;
     --background-color-section:#F5F4FA;
      --hero-background-color:#2F303A;
@@ -311,9 +310,6 @@ font-style: normal;
 letter-spacing: 0.03em;
 color: var(--primary-navigation-color);
 }
-.adres-list-item{
-    margin-bottom: 9px;
-}
 .link-adres:hover,
 .link-adres:focus{
     color:var(--akcent-color);
@@ -333,14 +329,13 @@ color: var(--adres-color);
 /*=============Portfolio=================*/
            /* кнопки*/
 .section-portfolio{
-    background-color: var(--section-color);
-    padding-top: 108px;
-    padding-bottom: 80px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .menu-list{
     display: flex;
     margin-bottom: 50px;
-    margin-left: 281px;
+    justify-content: center;
 }
 .menu-list-item:not(:last-child){
         margin-right: 8px;
@@ -387,9 +382,6 @@ background-color: var(--background-color-section);
     border: 1px solid var(--background-color-section);
 }
                /* картинки*/
-.photo-container{
-    padding-bottom: 94px;
-}
 .photo-list{
     display: flex;
     flex-wrap: wrap;
@@ -408,7 +400,9 @@ background-color: var(--background-color-section);
 .card-container{
 background-color: var(--primary-navigation-color);
 box-sizing: border-box;
-border-bottom: 1px solid #EEEEEE;
+border: 1px solid #EEEEEE;
+border-top: none;
+padding: 20px 24px;
 }
 .img-link{
     text-decoration: none;
@@ -420,8 +414,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--primary-text-color);
-padding-top: 20px;
-padding-left: 24px;
+margin-bottom: 4px;
 }
 .photo-list .card-description{
 font-weight: 400;
@@ -429,8 +422,6 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--primary-description-color);
-padding-bottom: 20px;
-padding-left: 24px;
 }
 
 
