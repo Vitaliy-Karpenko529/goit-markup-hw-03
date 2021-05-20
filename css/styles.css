@@ -326,6 +326,9 @@ color: var(--adres-color);
 .adres-link:focus{
     color:var(--akcent-color);
 }
+.adres-list-item:not(:last-child){
+    margin-bottom: 9px;
+}
 /*=============Portfolio=================*/
            /* кнопки*/
 .section-portfolio{
